@@ -1,18 +1,28 @@
-// i18next を初期化
-i18next
-  .use(i18nextHttpBackend) // JSONファイルから翻訳データを読み込むプラグイン
-  .init({
-    lng: "ja", // デフォルト言語
-    debug: true, // デバッグ情報
-    backend: {
-      // JSON ファイルのパスを指定
-      loadPath: "/locales/{{lng}}.json"
+// 翻訳データを定義
+const resources = {
+  en: {
+    translation: {
+      greeting: "Welcome",
+      menu1: "JavaScript Exercises"
     }
-  })
-  .then(() => {
-    // 初期レンダリング
-    updateContent();
-  });
+  },
+  ja: {
+    translation: {
+      greeting: "ようこそ",
+      menu1: "JavaScriptの練習"
+    }
+  }
+};
+
+// i18next を初期化
+i18next.init({
+  lng: "ja", // 初期言語
+  debug: true, // デバッグ情報を表示
+  resources: resources // 翻訳リソース
+}).then(() => {
+  // 初期レンダリング
+  updateContent();
+});
 
 // ラジオボタンのイベントリスナーを設定
 document.querySelectorAll('input[name="language"]').forEach((radio) => {
