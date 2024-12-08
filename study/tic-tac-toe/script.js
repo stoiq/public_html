@@ -126,7 +126,7 @@ $(function() {
     $("#ai-toggle").click(function() {
       isAIMode = !isAIMode;
       $(this).toggleClass("off", !isAIMode);
-      $(this).text(`AIモード: ${isAIMode ? "オン" : "オフ"}`);
+      $(this).text(`CPU: ${isAIMode ? "オン" : "オフ"}`);
       resetGame(); // モード切り替え時にゲームをリセット
     });
   });

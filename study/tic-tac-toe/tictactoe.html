@@ -27,9 +27,7 @@
         </header>
         <main>
             <div id="container">
-                <!-- 上部: 横並びのピース -->
-                <div id="pieces-row">              
-                     <!-- 〇ピース -->
+                <div class="game-container">
                     <div class="piece-group" id="left-pieces">
                         <div class="piece o">〇</div>
                         <div class="piece o">〇</div>
@@ -37,7 +35,20 @@
                         <div class="piece o">〇</div>
                         <div class="piece o">〇</div>
                     </div>
-                    <!-- ×ピース -->
+                  
+                    <!-- 中央: ゲームボード -->
+                    <div id="game-board">
+                      <div class="cell" data-cell="0"></div>
+                      <div class="cell" data-cell="1"></div>
+                      <div class="cell" data-cell="2"></div>
+                      <div class="cell" data-cell="3"></div>
+                      <div class="cell" data-cell="4"></div>
+                      <div class="cell" data-cell="5"></div>
+                      <div class="cell" data-cell="6"></div>
+                      <div class="cell" data-cell="7"></div>
+                      <div class="cell" data-cell="8"></div>
+                    </div>
+                    
                     <div class="piece-group" id="right-pieces">
                         <div class="piece x">×</div>
                         <div class="piece x">×</div>
@@ -46,24 +57,13 @@
                         <div class="piece x">×</div>
                     </div>
                 </div>
-              
-                <!-- 中央: ゲームボード -->
-                <div id="game-board">
-                  <div class="cell" data-cell="0"></div>
-                  <div class="cell" data-cell="1"></div>
-                  <div class="cell" data-cell="2"></div>
-                  <div class="cell" data-cell="3"></div>
-                  <div class="cell" data-cell="4"></div>
-                  <div class="cell" data-cell="5"></div>
-                  <div class="cell" data-cell="6"></div>
-                  <div class="cell" data-cell="7"></div>
-                  <div class="cell" data-cell="8"></div>
+                <div class="game-description">
+                    <button id="ai-toggle" class="off">CPU: オフ</button>
+                    <p>CPU:〇 プレイヤー:×</p><br>
+                    <p>〇と×を交互に置き、縦・横・斜めのいずれかに3つ揃えると勝ちです</p><br>
                 </div>
-                
-                <button id="ai-toggle" class="off">AIモード: オフ</button>
-                <p>AI:〇 プレイヤー:×</p>
-              </div>
-
+            </div>
+        </main>
         <!-- フッター -->
         <footer id="footer">
             <p>&copy; blursed cat</p>
