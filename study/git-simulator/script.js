@@ -1,39 +1,36 @@
 $(function() {
-  $("#content1 .draggable").draggable({
-    containment: "#container" // 親要素（フィールド）内に限定
+  $(".commit").draggable({
+    revert: "invalid"
   });
-  $("#content1 .droppable").droppable({
+
+  $("#remote").droppable({
+    accept: ".commit",
     drop: function(event, ui) {
-      $(this).text(i18next.t("dropped"));
+      const commit = ui.draggable;
+      $(this).append(commit);
+      $(commit).css({
+        top: "auto",
+        left: "auto"
+      });
+      $(this).css("background-color", "#90ee90");
+      setTimeout(() => {
+        $(this).css("background-color", "#ffefd5");
+      }, 500);
+      alert("Commit pushed to Remote Repository!");
     }
   });
-  $( "#content1 .resizable" ).resizable();
-  $( "#content1 .selectable" ).selectable();
-  $( "#content1 .sortable" ).sortable();
 });
 
 // 翻訳データを定義
 const resources = {
   en: {
     translation: {
-      title: "Interactions",
-      jqueryui1: "Draggable and Droppable",
-      jqueryui2: "Selectable and Sortable",
-      draggable: "Drag me",
-      droppable: "Drop here",
-      dropped: "Dropped!",
-      resizable:"Resize me"
+      description: "Tic-tac-toe is a two-player game where the goal is to align three of your symbols in a row on a 3x3 grid."
     }
   },
   ja: {
     translation: {
-      title: "インタラクション",
-      jqueryui1: "DraggableとDroppable",
-      jqueryui2: "SelectableとSortable",
-      draggable: "ドラッグ可",
-      droppable: "ここにドロップ",
-      dropped: "ドロップ成功!",
-      resizable:"リサイズ可"
+      description: "〇と×を交互に置き、縦・横・斜めのいずれかに3つ揃えると勝ちです"
     }
   }
 };

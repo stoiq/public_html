@@ -1,0 +1,91 @@
+@charset "UTF-8";
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  color: #ececec;
+  background-color: #212121;
+  height: 100%;
+}
+#container {  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#local, #remote {
+  width: 200px;
+  height: 150px;
+  line-height: 150px;
+  margin: 20px auto;
+  border: 2px solid #333;
+  border-radius: 10px;
+}
+#local {
+  background-color: #f0f8ff;
+}
+#remote {
+  background-color: #ffefd5;
+}
+.commit {
+  width: 50px;
+  height: 50px;
+  margin: 10px auto;
+  background-color: #ff6347;
+  color: #fff;
+  line-height: 50px;
+  border-radius: 50%;
+  cursor: grab;
+}
+.commit:active {
+  cursor: grabbing;
+}
+
+/* header
+------------------------------ */
+#header {
+    width: 100%;
+    background-color: #171717;
+}
+
+#header .wrapper {
+overflow: hidden;
+margin: 0 auto;
+width: 90%;
+max-width: 1000px;
+}
+
+#header p {
+float: left;
+margin: 22px 0 0;
+font-size: 1.4rem;
+font-weight: 700;
+}
+
+#header ul {
+float: right;
+margin: 28px 0;
+font-size: 0.9rem;
+font-weight: 500;
+}
+#header ul li {
+float: left;
+margin-right: 40px;
+}
+#header ul li:last-child {
+margin-right: 0;
+}
+.language-switcher input[type="radio"] {
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+  margin-right: 5px;
+  background-color: transparent;
+}
+.language-switcher input[type="radio"]:checked {
+  background-color: #4caf50;
+}

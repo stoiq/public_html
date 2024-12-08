@@ -30,8 +30,8 @@ body {
   justify-content: center; /* ボードの中央に位置 */
 }
 .piece {
-  width: 60px;
-  height: 60px;
+  width: 6vh;
+  height: 6vh;
   display: flex;
   text-align: center;
   justify-content: center;
@@ -78,7 +78,7 @@ body {
   text-align: center;
   font-size: 16px;
   max-width: 80%; /* 説明文の横幅を制限 */
-  line-height: 1.5; /* 行間を少し広げる */
+  line-height: 1; /* 行間を少し広げる */
 }
 
 /* header

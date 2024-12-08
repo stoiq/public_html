@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title data-i18n="title"></title>
+        <title>Git Push Simulator</title>
         <!-- Noto Sans JP -->
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
@@ -34,43 +34,11 @@
             </div>
           </header>
         <main>
-            <div id="container">
-                <div class="game-container">
-                    <div class="piece-group" id="left-pieces">
-                        <div class="piece o">〇</div>
-                        <div class="piece o">〇</div>
-                        <div class="piece o">〇</div>
-                        <div class="piece o">〇</div>
-                        <div class="piece o">〇</div>
-                    </div>
-                  
-                    <!-- 中央: ゲームボード -->
-                    <div id="game-board">
-                      <div class="cell" data-cell="0"></div>
-                      <div class="cell" data-cell="1"></div>
-                      <div class="cell" data-cell="2"></div>
-                      <div class="cell" data-cell="3"></div>
-                      <div class="cell" data-cell="4"></div>
-                      <div class="cell" data-cell="5"></div>
-                      <div class="cell" data-cell="6"></div>
-                      <div class="cell" data-cell="7"></div>
-                      <div class="cell" data-cell="8"></div>
-                    </div>
-                    
-                    <div class="piece-group" id="right-pieces">
-                        <div class="piece x">×</div>
-                        <div class="piece x">×</div>
-                        <div class="piece x">×</div>
-                        <div class="piece x">×</div>
-                        <div class="piece x">×</div>
-                    </div>
-                </div>
-                <div class="game-description">
-                    <button id="ai-toggle" class="off">CPU: OFF</button>
-                    <p>CPU:〇 Player:×</p><br>
-                    <p data-i18n="description">〇と×を交互に置き、縦・横・斜めのいずれかに3つ揃えると勝ちです</p><br>
-                </div>
+            <div id="local">
+                Local Repository
+                <div class="commit">C1</div>
             </div>
+            <div id="remote">Remote Repository</div>
         </main>
         <!-- jQueryを読み込み -->
         <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>

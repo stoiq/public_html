@@ -89,7 +89,16 @@ body {
   overflow: hidden;
 }
 
-#content1 .draggable{
+#content1 .drop_area2{
+  width: 100%;
+  height: 20vh;
+  border: 2px solid #7e766a;
+  background: #171717;
+  position: relative;
+  overflow: hidden;
+}
+
+#content1 .draggable, .resizable{
   width: 10vh;
   height: 10vh;
   float: left;
@@ -108,4 +117,16 @@ body {
   text-align: center;
   line-height: 14vh;
   margin: 1vh 25vh;
+}
+
+#content1 .selectable .ui-selecting { background: #FECA40; }
+#content1 .selectable .ui-selected { background: #F39814; }
+#content1 .selectable, .sortable {
+  list-style-type: none;
+  width: 100%;
+}
+#content1 .selectable li, .sortable li {  
+  height: 5vh;
+  font-size: 1.3rem;
+  line-height: 4vh;
 }

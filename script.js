@@ -2,21 +2,21 @@
 const resources = {
   en: {
     translation: {
-      greeting: "Welcome",
+      title: "Sandbox",
       menu1: "JavaScript Exercises",
       menu2: "jQuery Exercises",
       jquery1: "・button",
-      jqueryui1: "・Draggable and Droppable",
+      jqueryui1: "・Interactions",
       jqueryui2: "・tic-tac-toe",
     }
   },
   ja: {
     translation: {
-      greeting: "ようこそ",
+      title: "砂場",
       menu1: "JavaScriptの練習",
       menu2: "jQueryの練習",
       jquery1: "・ボタン",
-      jqueryui1: "・DraggableとDroppable",
+      jqueryui1: "・インタラクション",
       jqueryui2: "・〇×ゲーム",
     }
   }

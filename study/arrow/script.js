@@ -27,6 +27,7 @@ document.getElementById("right").addEventListener("click", () => updateMessage("
 const resources = {
   en: {
     translation: {
+      title: "Arrow keys",
       initialText: "Please press the button",
       updatedText1: "You pressed the ",
       updatedText2: " key"
@@ -34,6 +35,7 @@ const resources = {
   },
   ja: {
     translation: {
+      title: "矢印キー",
       initialText: "ボタンを押してください",
       updatedText1: "",
       updatedText2: "キーを押しました"
