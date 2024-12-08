@@ -3,13 +3,21 @@ const resources = {
   en: {
     translation: {
       greeting: "Welcome",
-      menu1: "JavaScript Exercises"
+      menu1: "JavaScript Exercises",
+      menu2: "jQuery Exercises",
+      jquery1: "・button",
+      jqueryui1: "・Draggable and Droppable",
+      jqueryui2: "・tic-tac-toe",
     }
   },
   ja: {
     translation: {
       greeting: "ようこそ",
-      menu1: "JavaScriptの練習"
+      menu1: "JavaScriptの練習",
+      menu2: "jQueryの練習",
+      jquery1: "・ボタン",
+      jqueryui1: "・DraggableとDroppable",
+      jqueryui2: "・〇×ゲーム",
     }
   }
 };

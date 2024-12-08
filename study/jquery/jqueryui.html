@@ -18,31 +18,39 @@
                 <p class="logo"><a href="../../index.html">blursed cat</a></p>
                 <nav>
                     <ul>
-                        <li><a href="../../index.html">トップ</a></li>
-                        <li><a href="../../uncreated.html">お知らせ</a></li>
-                        <li><a href="../../uncreated.html">お問い合わせ</a></li>
+                        <li>
+                        <div class="language-switcher">
+                            <label>
+                              <input type="radio" name="language" value="en"> English
+                            </label>
+                            &nbsp;
+                            <label>
+                              <input type="radio" name="language" value="ja" checked> 日本語
+                            </label>
+                          </div>
+                        </li>
                     </ul>
                 </nav>
             </div>
-        </header>
+          </header>
 
         <!-- メイン -->
         <main>
             <!-- コンテンツ1 -->
             <section id="content1">
-                <h2>DraggableとDroppable</h2>
+                <h2 data-i18n="jqueryui1"></h2>
                 <div class="wrapper">
                     <div class="drop_area">
                         <div class="draggable">
-                            <p>Drag me</p>
+                            <p data-i18n="draggable"></p>
                         </div>
                     </div>
                     <div class="drop_area">
                         <div class="draggable">
-                            <p>Drag me</p>
+                            <p data-i18n="draggable"></p>
                         </div>
                         <div class="droppable">
-                            <p>Drop here</p>
+                            <p data-i18n="droppable"></p>
                         </div>
                     </div>
                 </div>
@@ -55,6 +63,8 @@
         <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/ui-darkness/jquery-ui.css">
         <!-- jQuery UI Touch Punchを読み込み -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+        <!-- i18next -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/24.0.2/i18next.min.js"></script>
         <script src="script.js"></script>
     </body>
 </html>	

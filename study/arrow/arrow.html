@@ -17,13 +17,21 @@
           <p class="logo"><a href="../../index.html">blursed cat</a></p>
           <nav>
               <ul>
-                  <li><a href="../../index.html">トップ</a></li>
-                  <li><a href="../../uncreated.html">お知らせ</a></li>
-                  <li><a href="../../uncreated.html">お問い合わせ</a></li>
+                  <li>
+                  <div class="language-switcher">
+                      <label>
+                        <input type="radio" name="language" value="en"> English
+                      </label>
+                      &nbsp;
+                      <label>
+                        <input type="radio" name="language" value="ja" checked> 日本語
+                      </label>
+                    </div>
+                  </li>
               </ul>
           </nav>
       </div>
-  </header>
+    </header>
 
     <main>
       <section id="content1">
@@ -33,9 +41,11 @@
           <button id="down">↓</button>
           <button id="right">→</button>
         </div>
-        <div id="message">キーボードの矢印キー</div>
+        <div id="dynamicLabel" data-i18n="initialText"></div>
       </section>
     </main>
+    <!-- i18next -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/24.0.2/i18next.min.js"></script>
     <script src="script.js"></script> <!-- JavaScriptファイルを読み込む -->
   </body>
 </html>

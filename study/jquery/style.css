@@ -40,6 +40,21 @@ body {
 #header ul li:last-child {
   margin-right: 0;
 }
+.language-switcher input[type="radio"] {
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+  margin-right: 5px;
+  background-color: transparent;
+}
+.language-switcher input[type="radio"]:checked {
+  background-color: #4caf50;
+}
+
 
 /* content1
 ------------------------------ */
@@ -67,7 +82,7 @@ body {
 
 #content1 .drop_area{
   width: 50%;
-  height:20vh;
+  height: 20vh;
   border: 2px solid #7e766a;
   background: #171717;
   position: relative;
@@ -75,13 +90,13 @@ body {
 }
 
 #content1 .draggable{
-  width:10vh;
-  height:10vh;
+  width: 10vh;
+  height: 10vh;
   float: left;
   background: #7e766a;
   text-align: center;
   align-items: center;
-  line-height: 8.5vh;
+  line-height: 9vh;
   position: absolute;
   margin: 1vh;
 }
@@ -91,16 +106,6 @@ body {
   float: left;
   background: #006644;
   text-align: center;
-  line-height: 13.5vh;
+  line-height: 14vh;
   margin: 1vh 25vh;
-}
-
-/* footer
------------------------------- */
-#footer {
-  padding: 18px 0;
-  color: #ececec;
-  font-size: 0.8rem;
-  text-align: center;
-  background-color: #171717;
 }

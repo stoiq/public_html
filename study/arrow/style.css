@@ -59,7 +59,7 @@ body {
   grid-row: 2;
 }
 
-#message {
+#dynamicLabel {
   padding: 30px;
   margin: auto;
   font-size: 2rem;
@@ -100,3 +100,18 @@ body {
 #header ul li:last-child {
   margin-right: 0;
 }	
+
+.language-switcher input[type="radio"] {
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+  margin-right: 5px;
+  background-color: transparent;
+}
+.language-switcher input[type="radio"]:checked {
+  background-color: #4caf50;
+}
