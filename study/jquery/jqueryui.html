@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <!-- ページのタイトル -->
+        <title>jquery</title>
+        <!-- Noto Sans JP -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+        <!-- CSSファイルをリンク -->
+        <link rel="stylesheet" href="../../reset.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!-- ヘッダー -->
+        <header id="header">
+            <div class="wrapper">
+                <p class="logo"><a href="../../index.html">blursed cat</a></p>
+                <nav>
+                    <ul>
+                        <li><a href="../../index.html">トップ</a></li>
+                        <li><a href="#">お知らせ</a></li>
+                        <li><a href="#">お問い合わせ</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- メイン -->
+        <main>
+            <!-- コンテンツ1 -->
+            <section id="content1">
+                <h2>DraggableとDroppable</h2>
+                <div class="wrapper">
+                    <div class="drop_area">
+                        <div class="draggable">
+                            <p>Drag me</p>
+                        </div>
+                    </div>
+                    <div class="drop_area">
+                        <div class="draggable">
+                            <p>Drag me</p>
+                        </div>
+                        <div class="droppable">
+                            <p>Drop here</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- フッター -->
+        <footer id="footer">
+            <p>&copy; blursed cat</p>
+        </footer>
+        <!-- jQueryを読み込み -->
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <!-- jQuery UIを読み込み -->
+        <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.min.js"></script>
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/ui-darkness/jquery-ui.css">
+        <script src="script.js"></script>
+    </body>
+</html>	

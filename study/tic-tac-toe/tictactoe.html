@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>〇×ゲーム</title>
+        <!-- Noto Sans JP -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+        <!-- CSSファイルをリンク -->
+        <link rel="stylesheet" href="../../reset.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!-- ヘッダー -->
+        <header id="header">
+            <div class="wrapper">
+                <p class="logo"><a href="../../index.html">blursed cat</a></p>
+                <nav>
+                    <ul>
+                        <li><a href="../../index.html">トップ</a></li>
+                        <li><a href="#">お知らせ</a></li>
+                        <li><a href="#">お問い合わせ</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div id="container">
+                <!-- 上部: 横並びのピース -->
+                <div id="pieces-row">              
+                     <!-- 〇ピース -->
+                    <div class="piece-group" id="left-pieces">
+                        <div class="piece o">〇</div>
+                        <div class="piece o">〇</div>
+                        <div class="piece o">〇</div>
+                        <div class="piece o">〇</div>
+                        <div class="piece o">〇</div>
+                    </div>
+                    <!-- ×ピース -->
+                    <div class="piece-group" id="right-pieces">
+                        <div class="piece x">×</div>
+                        <div class="piece x">×</div>
+                        <div class="piece x">×</div>
+                        <div class="piece x">×</div>
+                        <div class="piece x">×</div>
+                    </div>
+                </div>
+              
+                <!-- 中央: ゲームボード -->
+                <div id="game-board">
+                  <div class="cell" data-cell="0"></div>
+                  <div class="cell" data-cell="1"></div>
+                  <div class="cell" data-cell="2"></div>
+                  <div class="cell" data-cell="3"></div>
+                  <div class="cell" data-cell="4"></div>
+                  <div class="cell" data-cell="5"></div>
+                  <div class="cell" data-cell="6"></div>
+                  <div class="cell" data-cell="7"></div>
+                  <div class="cell" data-cell="8"></div>
+                </div>
+                
+                <button id="ai-toggle" class="off">AIモード: オフ</button>
+                <p>AI:〇 プレイヤー:×</p>
+              </div>
+
+        <!-- フッター -->
+        <footer id="footer">
+            <p>&copy; blursed cat</p>
+        </footer>
+        <!-- jQueryを読み込み -->
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <!-- jQuery UIを読み込み -->
+        <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.min.js"></script>
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/ui-darkness/jquery-ui.css">
+        <script src="script.js"></script>
+    </body>
+</html>

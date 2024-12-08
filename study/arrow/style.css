@@ -1,0 +1,113 @@
+@charset "UTF-8";
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  color: #ececec;
+  background-color: #212121;
+  height: 100%;
+}
+
+/* content1
+------------------------------ */
+#content1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+#content1 .button-container {
+  display: grid;
+  grid-template-columns: 50px 50px 50px;
+  grid-template-rows: 50px 50px;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+#content1 .button-container button {
+  padding: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  background-color: #333;
+  color: white;
+  border: 1px solid #555;
+  border-radius: 5px;
+}
+
+#content1 .button-container button:hover {
+  background-color: #555;
+}
+
+#content1 .button-container #up {
+  grid-column: 2; /* 中央上 */
+  grid-row: 1;
+}
+
+#content1 .button-container #left {
+  grid-column: 1; /* 左 */
+  grid-row: 2;
+}
+
+#content1 .button-container #down {
+  grid-column: 2; /* 中央下 */
+  grid-row: 2;
+}
+
+#content1 .button-container #right {
+  grid-column: 3; /* 右 */
+  grid-row: 2;
+}
+
+#message {
+  padding: 30px;
+  margin: auto;
+  font-size: 2rem;
+}
+
+
+/* header
+------------------------------ */
+#header {
+  width: 100%;
+  background-color: #171717;
+}
+
+#header .wrapper {
+  overflow: hidden;
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1000px;
+}
+
+#header p {
+  float: left;
+  margin: 22px 0 0;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+#header ul {
+  float: right;
+  margin: 28px 0;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+#header ul li {
+  float: left;
+  margin-right: 40px;
+}
+#header ul li:last-child {
+  margin-right: 0;
+}
+
+/* footer
+------------------------------ */
+#footer {
+  padding: 18px 0;
+  color: #ececec;
+  font-size: 0.8rem;
+  text-align: center;
+  background-color: #171717;
+}
+	
