@@ -41,6 +41,21 @@ body {
   margin-right: 0;
 }
 
+.language-switcher input[type="radio"] {
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+  margin-right: 5px;
+  background-color: transparent;
+}
+.language-switcher input[type="radio"]:checked {
+  background-color: #4caf50;
+}
+
 /* content1
 ------------------------------ */
 #content1 .wrapper {
@@ -72,14 +87,4 @@ body {
   font-size: 1.1rem;
   line-height: 2.0em;
   border-bottom: 2px solid #7e766a;
-}
-
-/* footer
------------------------------- */
-#footer {
-  padding: 18px 0;
-  color: #ececec;
-  font-size: 0.8rem;
-  text-align: center;
-  background-color: #171717;
 }
